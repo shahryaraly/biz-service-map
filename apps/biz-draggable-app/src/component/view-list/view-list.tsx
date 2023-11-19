@@ -74,7 +74,7 @@ export default function ViewList(props: ViewListProp) {
                 <Card.Header>
                     <div>
                         <Stack direction="horizontal" gap={2} className="text-right">
-                            {props.listDto.title}
+                            <b>{props.listDto.title}</b>
                             <EditList sucessCallback={props.onSuccessCallback} listId={props.listDto.id}></EditList>
                             <DeleteList sucessCallback={props.onSuccessCallback} listId={props.listDto.id}></DeleteList>
                         </Stack>

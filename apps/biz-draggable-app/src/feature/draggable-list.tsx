@@ -89,7 +89,7 @@ export function DraggableList() {
                         <Row xs={1} md={4} lg={6} className="g-4">
                             {loading && <p>loading...</p>}
                             {!loading && error && <p>error occured .....</p>}
-                            {!loading && !error && !lists?.length && <p>no data found</p>}
+                            {!loading && !error && !lists?.length && <p>waiting for 1st list to be added...</p>}
                             {
                                 !loading && !error && lists && lists.length &&
                                 (
