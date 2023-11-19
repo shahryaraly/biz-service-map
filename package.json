@@ -1,0 +1,30 @@
+{
+  "name": "biz-draggable-list",
+  "version": "1.0.0",
+  "description": "draggable list items",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "start": "lerna run start",
+    "build": "tsc --build --verbose",
+    "publish": "lerna run tsc && lerna publish && lerna run start"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "@typescript-eslint/eslint-plugin": "^5.44.0",
+    "@typescript-eslint/parser": "^5.44.0",
+    "eslint": "^8.28.0",
+    "lerna": "^7.4.2",
+    "prettier": "^2.8.0",
+    "ts-node": "^10.9.1"
+  },
+  "dependencies": {
+    "biz-utils": "^1.0.4",
+    "biz-draggable-app": "^1.1.0",
+    "biz-draggable-service": "^2.0.1",
+    "serve": "^14.2.1",
+    "typescript": "^4.9.3"
+  }
+}

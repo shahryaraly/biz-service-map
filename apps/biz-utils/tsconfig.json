@@ -1,0 +1,31 @@
+// {
+//     "compilerOptions": {
+//         "module": "commonjs",
+//         "target": "es2019",
+//         "declaration": true,
+//         "outDir": "./build"
+//     },
+//     "include": [
+//         "src/**/*"
+//     ]
+// }
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "target": "es2019",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "declaration": true,
+        "strict": true,
+        "incremental": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "rootDir": "./src",
+        "outDir": "./build",
+        "composite": true
+    },
+    "include": [
+        "./src"
+    ]
+}
