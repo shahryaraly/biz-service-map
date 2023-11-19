@@ -1,0 +1,7 @@
+.list-container{
+     height: 100%;
+}
+
+.list-container-col{
+      overflow: scroll;
+}
