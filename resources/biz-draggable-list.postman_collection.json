@@ -1,0 +1,320 @@
+{
+	"info": {
+		"_postman_id": "fd5d5872-665f-4f3d-8c96-5ca979e33784",
+		"name": "biz-draggable-list",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5488936"
+	},
+	"item": [
+		{
+			"name": "getLists",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api-local}}/api/v1/biz-draggable-list/list",
+					"host": [
+						"{{api-local}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"biz-draggable-list",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getListById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api-local}}/api/v1/biz-draggable-list/list/2",
+					"host": [
+						"{{api-local}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"biz-draggable-list",
+						"list",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteListById",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{api-local}}/api/v1/biz-draggable-list/list/2",
+					"host": [
+						"{{api-local}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"biz-draggable-list",
+						"list",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addList",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"New\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api-local}}/api/v1/biz-draggable-list/list/",
+					"host": [
+						"{{api-local}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"biz-draggable-list",
+						"list",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateList",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":1,\n    \"title\":\"Active\",\n    \"active\":true,\n    \"created_date\":\"2023-01-01\",\n    \"updated_date\":\"2023-01-01\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api-local}}/api/v1/biz-draggable-list/list/",
+					"host": [
+						"{{api-local}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"biz-draggable-list",
+						"list",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getListItems",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api-local}}/api/v1/biz-draggable-list/list-item",
+					"host": [
+						"{{api-local}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"biz-draggable-list",
+						"list-item"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getListItemById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api-local}}/api/v1/biz-draggable-list/list-item/1",
+					"host": [
+						"{{api-local}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"biz-draggable-list",
+						"list-item",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteListItemById",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{api-local}}/api/v1/biz-draggable-list/list-item/3",
+					"host": [
+						"{{api-local}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"biz-draggable-list",
+						"list-item",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addListItem",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"listId\": \"1\",\n    \"title\": \"task 04\",\n    \"description\": \"my task 04 description\",\n    \"active\": true,\n    \"created_date\": \"2023-01-01\",\n    \"updated_date\": \"2023-04-04\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api-local}}/api/v1/biz-draggable-list/list-item/",
+					"host": [
+						"{{api-local}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"biz-draggable-list",
+						"list-item",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "moveListItemToDifferentList",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"listItemId\":\"1\",\n    \"listId\": \"3\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api-local}}/api/v1/biz-draggable-list/list-item-move",
+					"host": [
+						"{{api-local}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"biz-draggable-list",
+						"list-item-move"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateListItem",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":1,\n    \"listId\": \"1\",\n    \"title\": \"task 01 updated .....\",\n    \"description\": \"my task 03 description updated\",\n    \"active\": true,\n    \"created_date\": \"2023-01-01\",\n    \"updated_date\": \"2023-04-04\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api-local}}/api/v1/biz-draggable-list/list-item",
+					"host": [
+						"{{api-local}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"biz-draggable-list",
+						"list-item"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "api-local",
+			"value": "http://localhost:3005"
+		},
+		{
+			"key": "api-dev",
+			"value": "http://localhost:3005"
+		},
+		{
+			"key": "api-uat",
+			"value": "http://localhost:3005"
+		},
+		{
+			"key": "api-prod",
+			"value": "http://localhost:3005"
+		}
+	]
+}
