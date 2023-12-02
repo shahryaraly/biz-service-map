@@ -1,7 +1,0 @@
-.card-item:hover{
-    cursor: grab;
-}
-
-.card-item:active{
-    cursor: grabbing;
-}

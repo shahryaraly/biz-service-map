@@ -1,7 +1,7 @@
 {
-  "name": "biz-draggable-list",
+  "name": "biz-service-map",
   "version": "1.0.0",
-  "description": "draggable list items",
+  "description": "rendering service map at runtime",
   "private": true,
   "workspaces": [
     "apps/*"
@@ -22,8 +22,8 @@
   },
   "dependencies": {
     "biz-utils": "^1.0.4",
-    "biz-draggable-app": "^1.1.0",
-    "biz-draggable-service": "^2.0.1",
+    "biz-service-map-app": "^1.1.0",
+    "biz-service-map-service": "^2.0.1",
     "serve": "^14.2.1",
     "typescript": "^4.9.3"
   }

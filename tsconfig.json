@@ -17,10 +17,10 @@
             "path": "./apps/biz-utils"
         },
         {
-            "path": "./apps/biz-draggable-app"
+            "path": "./apps/biz-service-map-app"
         },
         {
-            "path": "./apps/biz-draggable-service"
+            "path": "./apps/biz-service-map-service"
         }
     ],
     "exclude": [
